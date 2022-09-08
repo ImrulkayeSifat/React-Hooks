@@ -1,36 +1,31 @@
 import './App.css';
-import React,{useState} from 'react';
-
-function countInitial(){
-  console.log('run function')
-  return 4;
-}
+import React,{useState,useEffect} from 'react';
 
 function App() {
-  let [count,setCount]=useState(()=>countInitial());
+  const [resourceType,setResourceType] = useState('posts');
+  const [items,setItems] = useState([])
 
-  // let [state,setState] = useState({count:4,theme:'blue'});
-  // const count = state.count;
-  // const theme = state.theme;
+  useEffect(()=>{
+    fetch(`https://jsonplaceholder.typicode.com/${resourceType}`)
+      .then(response => response.json())
+      .then(json => setItems(json))
 
-  // function decrementCount(){
-  //   setCount(prevState=>{
-  //     return {...prevState,count:prevState.count-1}
-  //   });
-  // }
-
-  function decrementCount(){
-    setCount(prevCount=>prevCount-1);
-  }
-
-  function incrementCount(){
-    setCount(prevCount=>prevCount+1);
-  }
+    //for clean up
+    // return ()=>{
+    //   console.log('helelo');
+    // }
+  },[resourceType])
   return (
     <>
-      <button onClick={decrementCount}>-</button>
-      <span>{count}</span>
-      <button onClick={incrementCount}>+</button>
+      <div>
+        <button onClick={()=>setResourceType('posts')}>Posts</button>
+        <button onClick={()=>setResourceType('users')}>Users</button>
+        <button onClick={()=>setResourceType('comments')}>Comments</button>
+      </div>
+      <h1>{resourceType}</h1>
+      {items.map(item=>{
+        return <pre>{JSON.stringify(item)}</pre>
+      })}
     </>
   );
 }
