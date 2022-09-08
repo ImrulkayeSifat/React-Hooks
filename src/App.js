@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState,useCallback } from 'react';
 import List from './List';
-
+// One of the major difference is that useMemo returns a memoized value while useCallback returns a memoized callback function
 function App() {
   
   const [number,setNumber] = useState(0);
