@@ -1,27 +1,39 @@
 import './App.css';
-import React, { useState,useCallback } from 'react';
-import List from './List';
-// One of the major difference is that useMemo returns a memoized value while useCallback returns a memoized callback function
-function App() {
+import React, { useReducer } from 'react';
+
+const ACTIONS = {
+  INCREMENT : 'increment',
+  DECREMENT : 'decrement'
+}
+
+function reducer(state,action){
   
-  const [number,setNumber] = useState(0);
-  const [dark,setDark] = useState(false);
+  switch (action.type){
+    case ACTIONS.INCREMENT:
+      return {count:state.count+1}
+    case ACTIONS.DECREMENT:
+      return {count:state.count-1}
+    default:
+      return state;
+  }
+}
 
-  const getItems = useCallback(() => {
-    return [number,number+1,number+2]
-  },[number])
+function App() {
+  const [state,dispatch] = useReducer(reducer,{count:0});
 
-  const theme = {
-    backgroundColor: dark ? '#333':'#FFF',
-    color : dark ? '#FFF': '#333'
+  function increment(){
+    dispatch({type:'increment'})
   }
 
+  function decrement(){
+    dispatch({type:'decrement'})
+  }
   return (
-    <div style={theme}>
-      <input type="number" value={number} onChange = {e=>setNumber(parseInt(e.target.value))}/>
-      <button onClick={()=>setDark(prevDark => !prevDark)}>change theme</button>
-      <List getItems={getItems} />
-    </div>
+    <>
+      <button onClick={decrement}>-</button>
+      <span>{state.count}</span>
+      <button onClick={increment}>+</button>
+    </>
   );
 }
 
