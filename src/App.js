@@ -1,19 +1,13 @@
 import './App.css';
-import React, { useState,useId } from 'react';
-//https://blog.webdevsimplified.com/2022-06/use-id/
+import React from 'react';
+import useLocalStorage from './useLocalStorage';
+
 function App() {
-  const id = useId()
+  const [name,setName] = useLocalStorage('name','g');
 
   return (
     <>
-      <div>
-        <label htmlFor={`${id}-email`}>Email</label>
-        <input id={`${id}-email`} type="email" />
-      </div>
-      <div>
-        <label htmlFor={`${id}-password`}>Password</label>
-        <input id={`${id}-password`} type="password" />
-      </div>
+      <input type="text" value={name} onChange={e=>setName(e.target.value)}/>
     </>
   );
 }
