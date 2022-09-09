@@ -10,7 +10,7 @@ function App() {
     <>
       {/* <ToggleComponent /> */}
       {/* <TimeoutComponent /> */}
-      <DebounceComponent />
+      {/* <DebounceComponent /> */}
     </>
   );
 }
