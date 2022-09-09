@@ -1,18 +1,18 @@
 import './App.css';
-import React, { useState } from 'react';
-import ListL from './ListL';
+import React, { useState,useLayoutEffect } from 'react';
+
 
 function App() {
+  const [count,setCount] = useState(0);
 
-  const [input,setInput] = useState('');
+  useLayoutEffect(()=>{
+    console.log(count)
+  },[count]);
 
-  function handleChange(e){
-    setInput(e.target.value);
-  }
   return (
     <>
-      <input type="text" value={input} onChange={handleChange} />
-      <ListL input={input}/>
+      <button onClick={()=>setCount(c=>c+1)}>Increment</button>
+      <div>{count}</div>
     </>
   );
 }
