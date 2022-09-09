@@ -1,18 +1,10 @@
 import './App.css';
-import React, { useState,useLayoutEffect } from 'react';
+import React, { useState } from 'react';
 
-
+//https://blog.webdevsimplified.com/2021-11/use-debug-value/
 function App() {
-  const [count,setCount] = useState(0);
-
-  useLayoutEffect(()=>{
-    console.log(count)
-  },[count]);
-
   return (
     <>
-      <button onClick={()=>setCount(c=>c+1)}>Increment</button>
-      <div>{count}</div>
     </>
   );
 }
