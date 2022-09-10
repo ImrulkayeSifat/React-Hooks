@@ -15,7 +15,7 @@ function App() {
       {/* <DebounceComponent /> */}
       {/* <UpdateEffectComponent /> */}
       {/* <ArrayComponent /> */}
-      <PreviousComponent />
+      {/* <PreviousComponent /> */}
     </>
   );
 }
