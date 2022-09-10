@@ -20,7 +20,7 @@ function App() {
       {/* <ArrayComponent /> */}
       {/* <PreviousComponent /> */}
       {/* <StateWithHistoryComponent /> */}
-      <StorageComponent />
+      {/* <StorageComponent /> */}
     </>
   );
 }
