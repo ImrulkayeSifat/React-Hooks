@@ -12,23 +12,14 @@ import AsyncComponent from './9-useAsync/AsyncComponent';
 import FetchComponent from './10-useFetch/ FetchComponent';
 import ScriptComponent from './11-useScript/ScriptComponent';
 import DeepCompareEffectComponent from './12-useDeepCompareEffect/DeepCompareEffectComponent';
+import EventListenerComponent from './13-useEventListener/EventListenerComponent';
 
 function App() {
 
   return (
     <>
-      {/* <ToggleComponent /> */}
-      {/* <TimeoutComponent /> */}
-      {/* <DebounceComponent /> */}
-      {/* <UpdateEffectComponent /> */}
-      {/* <ArrayComponent /> */}
-      {/* <PreviousComponent /> */}
-      {/* <StateWithHistoryComponent /> */}
-      {/* <StorageComponent /> */}
-      {/* <AsyncComponent /> */}
-      {/* <FetchComponent /> */}
-      {/* <ScriptComponent /> */}
-      {/* <DeepCompareEffectComponent /> */}
+      
+      {/* <EventListenerComponent /> */}
     </>
   );
 }
