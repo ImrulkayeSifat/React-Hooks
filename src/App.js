@@ -11,6 +11,7 @@ import StorageComponent from './8-useStorage/StorageComponent';
 import AsyncComponent from './9-useAsync/AsyncComponent';
 import FetchComponent from './10-useFetch/ FetchComponent';
 import ScriptComponent from './11-useScript/ScriptComponent';
+import DeepCompareEffectComponent from './12-useDeepCompareEffect/DeepCompareEffectComponent';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
       {/* <AsyncComponent /> */}
       {/* <FetchComponent /> */}
       {/* <ScriptComponent /> */}
+      <DeepCompareEffectComponent />
     </>
   );
 }
