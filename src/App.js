@@ -28,7 +28,7 @@ function App() {
       {/* <AsyncComponent /> */}
       {/* <FetchComponent /> */}
       {/* <ScriptComponent /> */}
-      <DeepCompareEffectComponent />
+      {/* <DeepCompareEffectComponent /> */}
     </>
   );
 }
