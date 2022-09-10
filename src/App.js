@@ -5,6 +5,7 @@ import TimeoutComponent from './2-useTimeout/TimeoutComponent';
 import DebounceComponent from './3-useDebounce/DeounceComponent';
 import UpdateEffectComponent from './4-useUpdateEffect/UpdateEffectComponent';
 import ArrayComponent from './5-useArray/ArrayComponent';
+import PreviousComponent from './6-usePrevious/PreviousComponent';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* <DebounceComponent /> */}
       {/* <UpdateEffectComponent /> */}
       {/* <ArrayComponent /> */}
+      <PreviousComponent />
     </>
   );
 }
