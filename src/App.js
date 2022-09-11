@@ -27,7 +27,7 @@ function App() {
       {/* <OnScreenComponentComponent /> */}
       {/* <WindowSizeComponent /> */}
       {/* <MediaQueryComponent /> */}
-      <GeolocationComponent />
+      {/* <GeolocationComponent /> */}
     </>
   );
 }
