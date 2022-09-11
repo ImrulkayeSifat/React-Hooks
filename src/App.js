@@ -20,12 +20,12 @@ import GeolocationComponent from './17-useGeolocation/GeolocationComponent';
 import StateWithValidationComponent from './18-useStateWithValidation/StateWithValidationComponent';
 import SizeComponent from './19-useSize/SizeComponent';
 import EffectOnceComponent from './20-useEffectOnce/EffectOnceComponent';
+import ClickOutsideComponent from './21-useClickOutside/ClickOutsideComponent';
 
 function App() {
 
   return (
     <>
-      
       {/* <EventListenerComponent /> */}
       {/* <OnScreenComponentComponent /> */}
       {/* <WindowSizeComponent /> */}
@@ -34,6 +34,7 @@ function App() {
       {/* <StateWithValidationComponent /> */}
       {/* <SizeComponent /> */}
       {/* <EffectOnceComponent /> */}
+      <ClickOutsideComponent />
     </>
   );
 }
