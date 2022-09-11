@@ -21,6 +21,7 @@ import StateWithValidationComponent from './18-useStateWithValidation/StateWithV
 import SizeComponent from './19-useSize/SizeComponent';
 import EffectOnceComponent from './20-useEffectOnce/EffectOnceComponent';
 import ClickOutsideComponent from './21-useClickOutside/ClickOutsideComponent';
+import DarkModeComponent from './22-useDarkMode/DarkModeComponent';
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
       {/* <StateWithValidationComponent /> */}
       {/* <SizeComponent /> */}
       {/* <EffectOnceComponent /> */}
-      <ClickOutsideComponent />
+      {/* <ClickOutsideComponent /> */}
+      {/* <DarkModeComponent /> */}
     </>
   );
 }
