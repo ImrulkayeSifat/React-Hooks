@@ -16,6 +16,7 @@ import EventListenerComponent from './13-useEventListener/EventListenerComponent
 import OnScreenComponentComponent from './14-useOnScreen/OnScreenComponent';
 import WindowSizeComponent from './15-useWindowSize/WindowSizeComponent';
 import MediaQueryComponent from './16-useMediaQuery/MediaQueryComponent';
+import GeolocationComponent from './17-useGeolocation/GeolocationComponent';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
       {/* <OnScreenComponentComponent /> */}
       {/* <WindowSizeComponent /> */}
       {/* <MediaQueryComponent /> */}
+      <GeolocationComponent />
     </>
   );
 }
