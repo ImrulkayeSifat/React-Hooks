@@ -23,6 +23,7 @@ import EffectOnceComponent from './20-useEffectOnce/EffectOnceComponent';
 import ClickOutsideComponent from './21-useClickOutside/ClickOutsideComponent';
 import DarkModeComponent from './22-useDarkMode/DarkModeComponent';
 import CopyToClipboardComponent from './23-useCopyToClipboard/CopyToClipboardComponent';
+import CookieComponent from './24-useCookie/CookieComponent';
 
 function App() {
 
@@ -38,7 +39,8 @@ function App() {
       {/* <EffectOnceComponent /> */}
       {/* <ClickOutsideComponent /> */}
       {/* <DarkModeComponent /> */}
-      <CopyToClipboardComponent />
+      {/* <CopyToClipboardComponent /> */}
+      <CookieComponent />
     </>
   );
 }
