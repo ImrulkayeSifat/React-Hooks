@@ -15,6 +15,7 @@ import DeepCompareEffectComponent from './12-useDeepCompareEffect/DeepCompareEff
 import EventListenerComponent from './13-useEventListener/EventListenerComponent';
 import OnScreenComponentComponent from './14-useOnScreen/OnScreenComponent';
 import WindowSizeComponent from './15-useWindowSize/WindowSizeComponent';
+import MediaQueryComponent from './16-useMediaQuery/MediaQueryComponent';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       {/* <EventListenerComponent /> */}
       {/* <OnScreenComponentComponent /> */}
       {/* <WindowSizeComponent /> */}
+      {/* <MediaQueryComponent /> */}
     </>
   );
 }
