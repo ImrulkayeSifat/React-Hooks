@@ -42,7 +42,7 @@ function App() {
       {/* <DarkModeComponent /> */}
       {/* <CopyToClipboardComponent /> */}
       {/* <CookieComponent /> */}
-      <TranslationComponent />
+      {/* <TranslationComponent /> */}
     </>
   );
 }
